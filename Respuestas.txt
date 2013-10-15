@@ -1,0 +1,17 @@
+2.1 ¿Cuál es el error en el código del método para calcular el máximo común divisor?
+
+Respuesta: no nos devuelve el valor qUe deberia, la condicion del while esta mal definida, 
+no entrara puesto que el valor de "v" es 3, entonces al devolver el valor de "u" no se ha realizado operacion alguna
+por tanto devuelve el valor que tiene desde la entrada
+
+2.2 ¿Qué comandos del depurador utilizó para detectarlo? Describa la sesión de depuración.
+
+Respuesta: l // b (linea) // s // v l // 
+ejecute el programa con el depurador, liste el programa, segui paso a paso cada linea del codigo mirando 
+y por cada linea que pasaba miraba las variables y su valor, al ver que no entraba en el while por que la 
+condicion estaba mal detecte el error
+
+2.3 Escriba la dirección 'HTTP' del repositorio que contiene el desarrollo de 
+su práctica.
+
+Respuesta:
