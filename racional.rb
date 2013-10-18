@@ -5,12 +5,12 @@ require "./gcd.rb"
 class Fraccion
 
 	def initialize (*args)
-		i=gcd(args[0],args[1])
-		@a=args[0]/i
-		@b=args[1]/i
+		i=gcd(args[0],args[1])#se seleccionan los dos argumentos que se pasas
+		@a=args[0]/i 
+		@b=args[1]/i 
 	end
 	
-	def to_s
+	def to_s #funcion de pasar a string
 		"#{@a}/#{@b}"
 	end
 	
@@ -53,16 +53,16 @@ class Fraccion
 		return @a, @b	
 	end
 	
-	def min(x,y)
-		i=gcd(x,y)
-		x=x/i
-		y=y/i
-		return x,y
+	def min(m,n)
+		i=gcd(m,n)
+		m=m/i
+		n=n/i
+		return m,n
 	end
 	
-	def gcm(x, y)
-   	x, y = x.abs, y.abs
+	def gcm(u, v)
+   	u, y = u.abs, v.abs
    
-   	(x / mcd(x,y)) * y
+   	(u / gcd(u,v)) * v
 	end
 end
